@@ -1,0 +1,760 @@
+/* Add your CSS here */
+/* Add CSS stylesheet */
+.page{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    /* grid-template-columns: 10rem;  1 rem = 10 px 
+    grid-template-rows: 10rem;*/
+}
+
+/*Header CSS */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: lightgray;
+    border-style: solid;
+    font-size: 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8rem;
+
+}
+
+.emptyHeader{
+    display: flex;
+}
+
+.headerDetails{
+    
+    display: flex;
+    flex-direction: row;
+    flex-basis: 66.66%; /*same as width */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pageTitle{
+    font-weight: bold;
+}
+
+.searchBar{
+    height: 3rem;
+    color:grey;
+    width:20rem;
+    background-color: white;
+    border-style: solid;
+    font-size: 2rem;
+}
+.searchBar::placeholder{
+    font-size: 2rem;
+}
+
+/* Body CSS*/
+.body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-top: 8rem;
+
+}
+
+/*left Menu CSS */
+.leftMenu{
+    display: flex;
+    flex-direction: column;
+    border-right: dotted;
+}
+
+.questionLink{
+    color: blue;
+    font-size: 2.5rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.tagsLink{
+    color: blue;
+    font-size: 2.5rem;
+    padding: 2rem;
+    background-color: white;
+}
+.UserProfileLink{
+    color: blue;
+    font-size: 2.5rem;
+    padding: 2rem;
+    background-color: white;
+}
+/*Body Content CSS */
+.bodyContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 1st row in body */
+.questionsTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 2.5rem;
+}
+.allQuestionsTitle{
+    font-weight: bold;
+}
+
+.askQuestionButton{
+    font-size: 2.5rem;
+    background-color: rgb(48,144,226);
+    border-width: .13rem;
+    border-color: black;
+    color: white;
+    padding: 1.5rem;
+}
+.askQuestionButton:active{
+    background-color: white;
+}
+/* 2nd row in body */
+.questionsInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
+    border-bottom: dotted;
+    padding-bottom: 3rem;
+}
+
+.numberOfQuestions{
+    padding-left: 5rem;
+
+    
+}
+.questionInfoButtons{
+    padding-right: 20rem;
+    
+}
+
+.questionsPrevAndNextButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.questionsPrevButton{
+    font-size: 3rem; 
+    background-color: lightcoral;
+}
+
+.questionsNextButton{
+    font-size: 3rem; 
+    background-color: lightgreen
+}
+
+
+.newest{
+    font-size: 2.5rem;
+    background-color: white;
+}
+.newest:active{
+    background-color: blue;
+}
+.active{
+    font-size: 2.5rem;
+    background-color: white;
+}
+.active:active{
+    background-color: blue;
+}
+
+.unanswered{
+    font-size: 2.5rem;
+    background-color: white;
+}
+.unanswered:active{
+    background-color: blue;
+}
+
+
+/* Question Template */
+.questionExample{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: dotted;
+}
+
+.questionAnswersAndViews{
+    font-size: 1.5rem;
+    color:gray;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 15rem;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+}
+
+.questionTitleAndTagsMetaData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.questionTitleAndTags{
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+
+
+}
+.questionTitle{
+    color:blue;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.linkToQuestionsAnswered{
+    color: red;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.userProfile_text{
+    color: red;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.userProfile_subtext{
+    color: rgb(19, 55, 218);
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.questionTags{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    
+}
+
+.tags{
+    font-size: 1.5rem;
+    background-color: rgb(95, 95, 95);
+    color: white;
+    border-style: groove;
+    border-radius: 1rem;
+    border-color: black;
+    border-width: .15rem;
+    padding: .8rem;
+    margin-right: .75rem;
+}
+
+.questionSummary{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.metadataContainer{
+    
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.5rem;
+    justify-content:space-evenly
+}
+
+.authorContainer{
+    color:darkred;
+}
+
+/*Answer Page */
+
+.answersPage{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.answersPage_Header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem 2rem 5rem;
+    align-items: center;
+
+}
+
+.answersPage_NumOfAnswers{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 10rem;
+
+}
+
+.answersPage_QuestionTitle{
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 60%;
+}
+
+.answerPage_QuestionHeader{
+    display:flex;
+    flex-direction: row;
+    padding: 2rem 5rem 2rem 5rem;
+    border-bottom: dotted;
+    justify-content: space-around;
+    
+}
+
+.answersPage_Views{
+    font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 15rem;
+    padding-right: 2rem;
+    
+}
+
+.answersPage_MandatoryFields{
+    font-size: 1rem;
+    color:red;
+}
+.commentsPrevButton{
+    font-size: 1rem; 
+    background-color: lightcoral;
+}
+
+.commentsNextButton{
+    font-size: 1rem; 
+    background-color: lightgreen;
+}
+
+.answersPage_QuestionTextAndComments{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+}
+.answersPage_QuestionText{
+    font-size: 1.5rem;
+    width: 100%;
+    
+}
+.QuestionCommentsContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+.questionPage_CommentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+    font-size: 1rem;
+}
+
+.questionPage_CommentText{
+    width: 80%;
+}
+
+.questionPage_questionCommentAuthor{
+    width: 10%
+}
+
+
+.questionPage_votes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.answersPage_AuthorMetadataContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 30rem;
+}
+
+.answersPage_Author{
+    color :red;
+}
+
+.answersPage_AuthorMetadata{
+    color: lightgray;
+}
+
+
+
+
+.answersPage_AnswerContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 2rem 5rem 2rem 5rem;
+    border-bottom: dotted;
+    
+}
+
+.answersPage_AnswerAndComments{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.answersPage_AnswerText{
+    font-size: 2rem;
+    width: 80%;
+    padding-right: 5rem;
+}
+
+.answersPage_AnswerMetadata{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 22rem;
+}
+
+.editAnswerButton{
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.answersPage_AnswerAuthor{
+    color:green;
+}
+
+.answerPage_AnswerText{
+    color:lightgrey;
+}
+
+.answersPage_QuestionButtonAndPrevNextButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.answersPage_AnswerQuestionButton{
+    font-size: 3rem;
+    background-color: rgb(53, 138, 198);
+    color: white;
+    width: 30rem;
+    border-color: black;
+    margin:2rem 5rem 2rem 5rem;
+}
+.answerPrevButton{
+    font-size: 3rem;
+    background-color: lightcoral;
+}
+
+.answersNextButton{
+    font-size: 3rem;
+    background-color: lightgreen;
+}
+
+.answerPage_upvote{
+    font-size: 1.5rem;
+    background-color: lightgreen;
+}
+
+.answerPage_downvote{
+    font-size: 1.5rem;
+    background-color: lightcoral;
+}
+
+/* Ask Question Page */
+.askQuestion-Form{   
+    margin-left: 5rem;
+}
+.askQuestion-Form__Div{
+    padding: 1rem;
+}
+.askQuestion-label{
+    display: flex;
+    font-size: 3rem;
+}
+.askQuestion-label-description{
+    font-size: 1.8rem;
+    padding: 1rem 0rem .5rem 1rem;
+    display: flex;
+    font-style: italic;
+}
+.askQuestion-textarea{
+    font-size: 2rem;
+    height: 4rem;
+    width: 50rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+.askQuestion-textarea-text{
+    font-size: 2rem;
+    height: 20rem;
+    width: 50rem;
+    padding-bottom: 2rem;
+}
+.askQuestion-Bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 3rem;
+}
+.askQuestion-Bottom__button{
+    font-size: 3rem;
+    background-color: rgb(48,144,226);
+    border-color: black;
+    border-style: groove;
+    border-width: .14rem;
+    padding: .5rem;
+    color: white;
+}
+.askQuestion-Bottom__button:active{
+    background-color: white;
+}
+
+.deleteQuestion-Bottom__button{
+    font-size: 3rem;
+    background-color:red;
+    border-color: black;
+    border-style: groove;
+    border-width: .14rem;
+    padding: .5rem;
+    color: white;
+}
+.deleteQuestion-Bottom__button:active{
+    background-color: white;
+}
+
+
+.askQuestion-Bottom__text{
+    font-size: 2.5rem;
+    padding-right: 5rem;
+    color: red;
+}
+
+/* Tag Page */
+.tagPage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tagPage_Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem 10rem 5rem;
+    height: 6rem;
+}
+
+.tagPage_NumOfTags{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.tagPage_AllTags{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.tagPage_TagRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 4rem;
+    /*padding: 5rem 5rem 5rem 10rem;*/
+}
+
+.tagPage_TagContainer{
+    border: dotted;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 9rem;
+    
+}
+
+.tagPage_PlaceHolder{
+    padding: 1rem;
+    width: 9rem;
+}
+
+.tagPage_TagName{
+    color: blue;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    
+}
+.tagPage_TagNum{
+    font-size: 1.5rem;
+}
+
+
+/* Answer A Question Page */
+
+.addAnswerPage{
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.AddAnswerPage_UsernameForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.addAnswerPage_UsernameLabel{
+    font-size: 4rem;
+}
+
+.addAnswerPage_AnswerText{
+    font-size: 4rem;
+}
+.addAnswerPage_UsernameInput{
+    width: 50rem;
+    font-size: 2rem;
+}
+.addAnswerPage_AnswerTextInput{
+    width: 50rem;
+    font-size: 2rem;
+}
+.addAnswerPage_footer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+
+.addAnswerPage_PostQuestionButton{
+    font-size: 3rem;
+    background-color: rgb(53, 138, 198);
+    color: white;
+    border: black;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+.addAnswerPage_MandatoryFields{
+    font-size: 2rem;
+    color:red;
+}
+.welcome-page, .registerPage, .loginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.return-to-welcomepage, .userProfile_usermap_delbutton{
+    background-color: #f5c064;
+}
+header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+  
+.welcome-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.userProfile_username{
+    font-size: 2rem;
+    color:rgb(115, 73, 231);
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+.register-btn, .new-user-submit, .answersPage_submitComment{
+background-color: #4caf50;
+}
+
+.login-btn, .loginbutton {
+background-color: #2196f3;
+}
+
+.guest-btn, .tagPage_TagButtons, .userProfile_usermap_confirm{
+background-color: #f44336;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+button:active {
+transform: translateY(1px);
+}
+.error-messages-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #error-messages {
+    color: red;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  span {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: black;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input[type="button"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  
+  input[type="button"]:hover {
+    opacity: 0.8;
+  }
+  
