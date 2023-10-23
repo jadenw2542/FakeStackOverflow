@@ -15,3 +15,11 @@
 - the admin email will be admin + "@gmail.com"
 - Start server: type "node server/server.js"
 - Start client: go to client folder and type "npm start"
+
+## Search 
+
+if a user surrounds individual words with [] then all questions with a tagname in [] should be displayed. 
+The search results should be displayed when the user presses the ENTER key. 
+Also, a search string can contain a combination of [tagnames] and non-tag words, that is, not surrounded with [].
+For example, if the search string is [react][android] javascript then all questions tagged with react or android or both should be considered. 
+Also, questions with the non-tag word javascript in their text/title should be considered
