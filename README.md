@@ -24,7 +24,20 @@ Also, a search string can contain a combination of [tagnames] and non-tag words,
 For example, if the search string is [react][android] javascript then all questions tagged with react or android or both should be considered. 
 Also, questions with the non-tag word javascript in their text/title should be considered
 
-
+## Homepage
 ![](https://github.com/jadenw2542/FakeStackOverflow/blob/main/homepage.PNG)
 
-![](https://github.com/jadenw2542/TitanicDataAnalysis/blob/main/images/Project%20Analysis-1.png)
+## Login
+![](https://github.com/jadenw2542/FakeStackOverflow/blob/main/login.PNG)
+
+## Profile
+![](https://github.com/jadenw2542/FakeStackOverflow/blob/main/profile.PNG)
+
+#Question
+![](https://github.com/jadenw2542/FakeStackOverflow/blob/main/question%20page.PNG)
+
+## Search
+![](https://github.com/jadenw2542/FakeStackOverflow/blob/main/search.PNG)
+
+## Tags
+![](https://github.com/jadenw2542/FakeStackOverflow/blob/main/tags.PNG)
