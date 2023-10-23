@@ -23,3 +23,8 @@ The search results should be displayed when the user presses the ENTER key.
 Also, a search string can contain a combination of [tagnames] and non-tag words, that is, not surrounded with [].
 For example, if the search string is [react][android] javascript then all questions tagged with react or android or both should be considered. 
 Also, questions with the non-tag word javascript in their text/title should be considered
+
+
+![](https://github.com/jadenw2542/FakeStackOverflow/blob/main/homepage.PNG)
+
+![](https://github.com/jadenw2542/TitanicDataAnalysis/blob/main/images/Project%20Analysis-1.png)
